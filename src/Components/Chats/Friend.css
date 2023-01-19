@@ -1,0 +1,104 @@
+.chat-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.information:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.profile {
+    border-radius: 50%;
+    border-top: 3px solid #8a3ab9	;
+    border-right: 3px solid #e95950;
+    border-bottom: 3px solid #fccc63;
+    border-left: 3px solid #bc2a8d;
+    margin: 5px 0px 5px 5px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+}
+
+
+.profile img {
+    height: 100%;
+    width: 100%;
+}
+
+.friend-info {
+    padding-left: 20px;
+}
+
+.friend-info p {
+    margin: 5px;
+}
+
+.friend-info .user-name{
+    font-weight: 600;
+}
+
+.friend-info .last-chat {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.chat-room{
+    width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
+
+.chat-room > div:last-child{
+    scroll-snap-align: end;
+}
+  
+.chat-form {
+    width: 100%;
+}
+
+.chat-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.chat-form form input {
+    flex: 0.9;
+    background-color: black;
+    line-height: 30px;
+    outline: none;
+    border: 1px solid rgb(44, 44, 44);
+    padding-left: 5px;
+    border-radius: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.chat-form form button {
+    cursor: pointer;
+    background-color: black;
+    outline: none;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}

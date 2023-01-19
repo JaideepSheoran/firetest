@@ -1,0 +1,84 @@
+.account-container{
+    width: 70%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+
+.account-header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid white;
+}
+
+.account-userinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+.account-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.account-posts , .account-followers , .account-following{
+    padding: 5px 15px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.account-description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    align-items:baseline;
+    justify-content: flex-start;
+}
+
+.account-description > div {
+    padding: 5px;
+}
+
+.account-user {
+    margin: 10px;
+}
+
+.account-user > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.account-containerbody {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .account-container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .account-posts , .account-followers , .account-following {
+        padding: 0px 8px;
+    }
+}

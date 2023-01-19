@@ -1,0 +1,23 @@
+.comments-section {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    width: 95%;
+    margin: 5px;
+}
+
+.comments-section button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .comments-section {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,25 @@
+.message-box {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.message-balti {
+    width: 60%;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+}
+
+.message-balti  .msg-content{
+    background-color: #0158b6;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.r-time {
+    color: white;
+    font-size: 10px;
+    padding-left: 5px;
+}

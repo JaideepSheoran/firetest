@@ -1,0 +1,134 @@
+.container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    flex: 1;
+}
+
+.form-container{
+    margin: auto;
+    flex: 0.5;
+}
+
+.user-form > input{
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 95%;
+    border-radius: 10px;
+    line-height: 30px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.form-buttons{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: 10px; */
+}
+
+#formbtn{
+    background-color: cadetblue;
+    cursor: pointer;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    line-height: 30px;
+    padding: 5px;
+    margin: 5px 0px 5px 0px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+}
+
+.profile-photo{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.user-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.userimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.userimage > img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.photo-container{
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#setprofile{
+    cursor: pointer;
+    font-weight: bolder;
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border : none;
+    color: white;
+    padding: 30px ;
+}
+
+.hide_file {
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 16px;
+    width: 100%;
+}
+
+.photo-container:hover #setprofile{
+    display: inline;
+}
+
+
+@media screen and (max-width: 750px) {
+   .container{
+       width: 90%;
+       flex-direction: column;
+       padding: 10px;
+   }
+   .form-container{
+       width: 100%;
+   }
+   .form-buttons{
+       font-size: 12px;
+   }
+}
